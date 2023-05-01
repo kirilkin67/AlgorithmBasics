@@ -3,10 +3,10 @@ try:
     if year >= 0:
         if year == 0:
             print("В этом году 365 дней")
-        elif year % 400 == 0:
+        elif year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
             print("В этом году 366 дней")
-        elif year % 4 == 0 and year % 100 != 0:
-            print("В этом году 366 дней")
+        # elif year % 4 == 0 and year % 100 != 0:
+        #     print("В этом году 366 дней")
         else:
             print("В этом году 365 дней")
     else:
